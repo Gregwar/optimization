@@ -799,3 +799,72 @@ We can then write [some code](https://github.com/Gregwar/supervised_learning/blo
 <center>
 <img src="imgs/linear_regression_naive.png" width="600" />
 </center>
+
+---
+
+## Let's write some Python!
+
+On the next slide, you will find **data** and **models**.
+
+Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
+
+---
+
+## Let's write some Python!
+
+<div class="row">
+
+<div class="col-sm-6 p-1">
+<div class="card text-center">
+<div class="card-body">
+    <center>
+    <a href="data/data_0.csv"><img src="imgs/data_0.png" width="200" /></a>
+    </center>
+
+$f(x) = w_1 x + w_2$
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 p-1">
+<div class="card text-center">
+<div class="card-body">
+    <center>
+    <a href="data/data_1.csv"><img src="imgs/data_1.png" width="200" /></a>
+    </center>
+
+$f(x) = w_1 x^2 + w_2 x + w_3$
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 p-1">
+<div class="card text-center">
+<div class="card-body">
+    <center>
+    <a href="data/data_2.csv"><img src="imgs/data_2.png" width="200" /></a>
+    </center>
+
+$f(x) = w_1 cos(x) + w_2 x + w_3$
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 p-1">
+<div class="card text-center">
+<div class="card-body">
+    <center>
+    <a href="data/data_3.csv"><img src="imgs/data_3.png" width="200" /></a>
+    </center>
+
+$f(x) = w_1 log(x) + w_2 sin(x)$
+
+</div>
+</div>
+</div>
+
+</div>
