@@ -13,14 +13,17 @@ data = [
 ]
 data = np.array(data)
 
+# Building A and b
 A = [
     [1.0, x]
     for x in data[:, 0]
 ]
 b = data[:, 1]
 
+# Using pseudo-inverse
 w = np.linalg.pinv(A) @ b
     
+# Plot linear regression
 xs = np.linspace(0, 7, 100)
 ys = [w[0] + w[1] * x for x in xs]
 

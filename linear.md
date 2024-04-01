@@ -794,7 +794,7 @@ $A^\dagger$ is called the **pseudo-inverse** of $A$.
 
 ## Example
 
-We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
+We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
 
 <center>
 <img src="imgs/linear_regression_naive.png" width="600" />
