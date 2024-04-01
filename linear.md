@@ -171,7 +171,7 @@ Note: the models are linear in the parameters $w$, and not in the input $x$.
 
 <div class="alert alert-primary">
 
-💡 Which models are linear ?
+⚙️ Which models are linear ?
 
 </div>
 
@@ -243,7 +243,7 @@ $f(x) = w_1 w_2 x + w_2 x^2$
 
 <div class="alert alert-primary">
 
-💡 Which models are linear ?
+⚙️ Which models are linear ?
 
 </div>
 
@@ -349,7 +349,7 @@ Let's start with the simplest example:
 
 <div class="alert alert-primary">
 
-💡 What is the model ? How to find $w$ ?
+⚙️ What is the model ? How to find $w$ ?
 
 </div>
 
@@ -435,7 +435,7 @@ We can also impose derivatives:
 
 <div class="alert alert-primary">
 
-💡 What are $A$ and $b$ ?
+⚙️ What are $A$ and $b$ ?
 
 </div>
 
@@ -496,7 +496,7 @@ Now, what if we have 6 data points and want to find a model ?
 
 <div class="alert alert-primary">
 
-💡 How do you expect $f(x, w)$ to look like ?
+⚙️ How do you expect $f(x, w)$ to look like ?
 
 </div>
 
@@ -634,7 +634,7 @@ $$
 
 <div class="alert alert-primary">
 
-💡 Can you find an equation to find $w_1$ and $w_2$ ?
+⚙️ Can you find an equation to find $w_1$ and $w_2$ ?
 
 </div>
 
@@ -798,7 +798,7 @@ np.linalg.pinv(A) # pseudo-inverse
 
 ---
 
-## Example
+## Linear regression with pseudo-inverse
 
 We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
 
@@ -808,13 +808,18 @@ We can then write [some code](https://github.com/Gregwar/supervised_learning/blo
 
 ---
 
+<!-- header: "Practical exercices" -->
+# Practical exercices
+
+---
+
 ## Let's write some Python!
 
 On the next slide, you will find **data** and **models**.
 
 <div class="alert alert-primary">
 
-💡 Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
+⚙️ Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
 
 <hr/>
 
@@ -903,7 +908,7 @@ $(\alpha, \beta)$: angles of its arms. $(x_e, y_e)$: position of its end-effecto
 
 <div class="alert alert-primary">
 
-💡 Can you express $(x_e, y_e)$ as function of other variables ?
+⚙️ Can you express $(x_e, y_e)$ as function of other variables ?
 
 </div>
 
@@ -942,6 +947,6 @@ alpha, beta, x_e, y_e = data[0] # first data
 
 <div class="alert alert-primary mt-2">
 
-💡 Write some code to retrieve parameters $(x_b, y_b, l_1, l_2)$.
+⚙️ Write some code to retrieve parameters $(x_b, y_b, l_1, l_2)$.
 
 </div>
