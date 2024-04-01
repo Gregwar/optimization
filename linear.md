@@ -712,6 +712,80 @@ We can then write [some code](code/linear_regression_naive.py) to solve the line
 <img src="imgs/linear_regression_naive.png" width="600" />
 </center>
 
+---
 
+## A more general form
 
+Remember that we can write the exact form equation as:
 
+$$
+A w = b
+$$
+
+<span data-marpit-fragment>
+
+The loss function is then:
+
+$$
+\mathcal{L}(w) = (A w - b)^T (A w - b)
+$$
+
+</span>
+
+---
+
+## A more general form
+
+This expands to:
+
+$$
+\mathcal{L}(w) = w^T A^T A w - 2 w^T A^T b + b^T b
+$$
+
+<span data-marpit-fragment>
+
+The derivatives can then be computed as:
+
+$$
+\frac{\partial \mathcal{L}}{\partial w} = 2 A^T A w - 2 A^T b
+$$
+
+</span>
+
+---
+
+## A more general form
+
+Setting the derivative to zero yields:
+
+$$
+A^T A w = A^T b
+$$
+
+<span data-marpit-fragment>
+
+And thus:
+
+$$
+w = \underbrace{(A^T A)^{-1} A^T}_{A^\dagger} b
+$$
+
+</span>
+
+---
+
+## A more general form
+
+<div class="alert alert-success">
+
+The least square solution can then be obtained with the **exact same** approach as the exact solution.
+
+$A^{-1}$ is replaced by $A^\dagger = (A^T A)^{-1} A^T$.
+
+</div>
+
+<div class="alert alert-info" data-marpit-fragment>
+
+$A^\dagger$ is called the **pseudo-inverse** of $A$.
+
+</div>
