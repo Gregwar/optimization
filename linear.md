@@ -788,6 +788,12 @@ $A^{-1}$ is replaced by $A^\dagger = (A^T A)^{-1} A^T$.
 
 $A^\dagger$ is called the **pseudo-inverse** of $A$.
 
+```python
+import numpy as np
+np.linalg.inv(A) # inverse
+np.linalg.pinv(A) # pseudo-inverse
+```
+
 </div>
 
 ---
@@ -806,7 +812,20 @@ We can then write [some code](https://github.com/Gregwar/supervised_learning/blo
 
 On the next slide, you will find **data** and **models**.
 
-Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
+<div class="alert alert-primary">
+
+💡 Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
+
+<hr/>
+
+*Hint*: to load the data, you can use:
+
+```python
+import numpy as np
+data = np.loadtxt('data.csv')
+```
+
+</div>
 
 ---
 
@@ -866,5 +885,63 @@ $f(x) = w_1 log(x) + w_2 sin(x)$
 </div>
 </div>
 </div>
+
+</div>
+
+---
+
+## Practical case: identifying a RR robot
+
+Let us consider the following RR robot:
+
+<center>
+<img src="imgs/rr.svg" width="600" />
+</center>
+
+$(x_b, y_b)$: position of its base. $l_1, l_2$: lengths of its arms.
+$(\alpha, \beta)$: angles of its arms. $(x_e, y_e)$: position of its end-effector.
+
+<div class="alert alert-primary">
+
+💡 Can you express $(x_e, y_e)$ as function of other variables ?
+
+</div>
+
+---
+
+## Practical case: identifying a RR robot
+
+We have:
+
+$$
+\begin{align*}
+x_e &= x_b + l_1 \cos(\alpha) + l_2 \cos(\alpha + \beta) \\
+y_e &= y_b + l_1 \sin(\alpha) + l_2 \sin(\alpha + \beta)
+\end{align*}
+$$
+
+<div class="alert alert-info mt-2" data-marpit-fragment>
+
+The model is linear in the parameters $(x_b, y_b, l_1, l_2)$.
+
+</div>
+
+---
+
+## Practical case: identifying a RR robot
+
+Here are some [data](data/rr_data.csv) generated with this [script](https://github.com/Gregwar/supervised_learning/blob/main/code/rr_data.py).
+
+They contain noisy measurements of $(x_e, y_e)$ for different values of $(\alpha, \beta)$.
+
+```python
+import numpy as np
+data = np.loadtxt('data/rr_data.csv')
+alpha, beta, x_e, y_e = data[0] # first data
+```
+
+<div class="alert alert-primary mt-2">
+
+💡 Write some code to retrieve parameters $(x_b, y_b, l_1, l_2)$.
 
 </div>
