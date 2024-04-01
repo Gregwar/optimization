@@ -504,7 +504,7 @@ Now, what if we have 6 data points and want to find a model ?
 
 ## Quintic fitting
 
-The [output](code/quintic_fit.py) will look like this:
+The [output](https://github.com/Gregwar/supervised_learning/blob/main/code/quintic_fit.py) will look like this:
 
 <center>
 <img src="imgs/quintic_fit.png" width="600" />
@@ -706,7 +706,7 @@ $$
 
 ## Example
 
-We can then write [some code](code/linear_regression_naive.py) to solve the linear regression problem:
+We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_naive.py) to solve the linear regression problem:
 
 <center>
 <img src="imgs/linear_regression_naive.png" width="600" />
@@ -789,3 +789,13 @@ $A^{-1}$ is replaced by $A^\dagger = (A^T A)^{-1} A^T$.
 $A^\dagger$ is called the **pseudo-inverse** of $A$.
 
 </div>
+
+---
+
+## Example
+
+We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
+
+<center>
+<img src="imgs/linear_regression_naive.png" width="600" />
+</center>
