@@ -253,3 +253,58 @@ Remember the RR robot model:
 <center>
 <img src="imgs/rr_simple.svg" width="600" />
 </center>
+
+---
+
+## RR robot
+
+The position for the end-effector is:
+
+$$
+\begin{align*}
+x_e &= l_1 \cos(\alpha) + l_2 \cos(\alpha + \beta) \\
+y_e &= l_1 \sin(\alpha) + l_2 \sin(\alpha + \beta)
+\end{align*}
+$$
+
+<div class="alert alert-primary mt-2">
+
+⚙️ What is the Jacobian of the end-effector position with respect to the joint angles $\alpha$ and $\beta$ ?
+
+</div>
+
+---
+
+## RR robot
+
+The Jacobian is:
+
+$$
+J
+=
+\begin{bmatrix}
+\frac{\partial x_e}{\partial \alpha} && \frac{\partial x_e}{\partial \beta} \\
+\frac{\partial y_e}{\partial \alpha} && \frac{\partial y_e}{\partial \beta}
+\end{bmatrix}
+$$
+
+---
+
+## RR robot
+
+The Jacobian is:
+
+$$
+J
+=
+\begin{bmatrix}
+-l_1 \sin(\alpha) - l_2 \sin(\alpha + \beta) && -l_2 \sin(\alpha + \beta) \\
+l_1 \cos(\alpha) + l_2 \cos(\alpha + \beta) && l_2 \cos(\alpha + \beta)
+\end{bmatrix}
+$$
+
+---
+
+## RR robot
+
+We can now use Newton's method to solve for the joint angles $\alpha$ and $\beta$ for a given target position $(x_t, y_t)$!
