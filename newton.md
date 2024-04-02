@@ -129,7 +129,8 @@ Let's consider the function $f(x) = x^2 + x - 2$.
 
 <div class="alert alert-primary mt-2">
 
-⚙️ Apply 5 steps of Newton's method to find a root of $f(x)$. Try different initial guesses.
+⚙️ Apply 5 steps of Newton's method to find a root of $f(x)$.
+Try different initial guesses $x_0 = -5$ and $x_0 = 5$.
 
 </div>
 
