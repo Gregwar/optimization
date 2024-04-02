@@ -939,7 +939,7 @@ $f(x) = w_1 x^2 + w_2 x + w_3$
     <a href="data/data_2.csv"><img src="imgs/data_2.png" width="200" /></a>
     </center>
 
-$f(x) = w_1 cos(x) + w_2 x + w_3$
+$f(x) = w_1 cos(2x) + w_2 x + w_3$
 
 </div>
 </div>
