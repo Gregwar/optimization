@@ -217,6 +217,26 @@ $J$ is called the **Jacobian** of $f$. We can also write $J = \frac{\partial f}{
 
 ---
 
+## Jacobian
+
+In the context of Newton's method, $f$ is now approximated with:
+
+$$
+f(x) \approx f(x_0) + J \Delta x
+$$
+
+<span data-marpit-fragment>
+
+The update step when solving for $f(x) = 0$ becomes:
+
+$$
+\Delta x = -J^{-1} f(x_0)
+$$
+
+</span>
+
+---
+
 <!-- header: "Application on the RR robot" -->
 # Application on the RR robot
 
@@ -284,3 +304,9 @@ $$
 ## RR robot
 
 We can now use Newton's method to solve for the joint angles $\alpha$ and $\beta$ for a given target position $(x_t, y_t)$!
+
+<div class="alert alert-primary mt-2">
+
+⚙️ With the help of [rr.py](https://github.com/Gregwar/optimization/blob/main/code/rr.py) for drawing, implement Newton's method to solve for the joint angles for a given target position.
+
+</div>
