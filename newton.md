@@ -211,6 +211,8 @@ We call $\nabla f$ the **gradient** of $f$.
 If we now have $f: \mathbb{R}^n \to \mathbb{R}^m$, the exact same approximation will
 apply for every rows of $f$.
 
+<span data-marpit-fragment>
+
 For example, for $f: \mathbb{R}^2 \to \mathbb{R}^2$, we have:
 
 $$
@@ -230,7 +232,12 @@ f(x_0)
 \end{bmatrix}
 $$
 
+</span>
+<span data-marpit-fragment>
+
 $J$ is called the **Jacobian** of $f$. We can also write $J = \frac{\partial f}{\partial x}$.
+
+</span>
 
 ---
 
