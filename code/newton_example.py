@@ -2,11 +2,14 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 
+
 def f(x):
     return x**2 + x - 2
 
+
 def df(x):
-    return 2*x + 1
+    return 2 * x + 1
+
 
 ts = np.linspace(-7, 7, 100)
 vs = [f(t) for t in ts]
@@ -31,8 +34,8 @@ for x_0 in -5, 5:
         poly = np.array(polygon)
         plt.clf()
         plt.plot(ts, vs)
-        plt.plot(poly[:, 0], poly[:, 1], color='orange')
-        plt.scatter(poly[:, 0], poly[:, 1], color='orange')
+        plt.plot(poly[:, 0], poly[:, 1], color="orange")
+        plt.scatter(poly[:, 0], poly[:, 1], color="orange")
         plt.title(f"Newton method, x={x_0:.2f}, y={y_0:.2f}")
         plt.grid()
         # plt.show()
@@ -43,3 +46,6 @@ for x_0 in -5, 5:
 
     os.system(f"convert -delay 100 imgs/newton_{i}_*.png imgs/newton_{i}.gif")
 
+
+# ffmpeg -i gradient_step_%d.png -vf palettegen palette.png
+# ffmpeg -i gradient_step_%d.png -i palette.png -lavfi paletteuse gradient_steps.gif

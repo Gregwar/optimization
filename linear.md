@@ -175,7 +175,7 @@ Finally, we search for the parameters $w$ that minimize the metric on the datase
 </tr>
 <tr>
     <td>
-    Netwon's method
+    Newton's method
     </td>
     <td class="text-success">
     Any model
