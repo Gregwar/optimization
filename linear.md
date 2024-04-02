@@ -1,9 +1,9 @@
 ---
 marp: true
-title: "Supervised learning"
+title: "Optimization"
 theme: uncover
 paginate: true
-header: "Supervised learning"
+header: "Optimization"
 footer: "Grégoire Passault"
 style: :root { font-size: 1.5em; }
 ---
@@ -136,11 +136,68 @@ Finally, we search for the parameters $w$ that minimize the metric on the datase
 
 ## Outline
 
-* Linear models
-    * Exact solution
-    * Least squares
-* Newton's method
-* Gradient descent
+<table class="table table-striped">
+
+<thead>
+    <tr>
+        <th>
+        Approach
+        </th>
+        <th>
+        Pros
+        </th>
+        <th>
+        Cons
+        </th>
+    </tr>
+</thead>
+
+<tr>
+    <td>
+    Exact solution
+    </td>
+    <td class="text-success">
+    Efficient
+    </td>
+    <td class="text-danger">
+    Solvable equations, overfitting
+    </td>
+</tr>
+<tr>
+    <td>
+    Least square
+    </td>
+    <td class="text-success">
+    Efficient
+    </td>
+    <td class="text-danger">
+    Linear model, quadratic error
+    </td>
+</tr>
+<tr>
+    <td>
+    Netwon's method
+    </td>
+    <td class="text-success">
+    Any model
+    </td>
+    <td class="text-danger">
+    Suboptimal, can diverge
+    </td>
+</tr>
+<tr>
+    <td>
+    Gradient descent
+    </td>
+    <td class="text-success">
+    Any model
+    </td>
+    <td class="text-danger">
+    Suboptimal, slow
+    </td>
+</tr>
+
+</table>
 
 ---
 
