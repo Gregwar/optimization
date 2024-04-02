@@ -1,9 +1,9 @@
 ---
 marp: true
-title: "Optimization"
+title: "Optimization - Linear Models"
 theme: uncover
 paginate: true
-header: "Optimization"
+header: "Optimization - Linear Models"
 footer: "Grégoire Passault"
 style: :root { font-size: 1.5em; }
 ---
@@ -13,9 +13,8 @@ style: :root { font-size: 1.5em; }
 @import 'style.css';
 </style>
 
-# Supervised learning
-## Grégoire Passault
-
+# Optimization - Linear models
+### Grégoire Passault
 
 ---
 
@@ -561,7 +560,7 @@ Now, what if we have 6 data points and want to find a model ?
 
 ## Quintic fitting
 
-The [output](https://github.com/Gregwar/supervised_learning/blob/main/code/quintic_fit.py) will look like this:
+The [output](https://github.com/Gregwar/optimization/blob/main/code/quintic_fit.py) will look like this:
 
 <center>
 <img src="imgs/quintic_fit.png" width="600" />
@@ -774,7 +773,7 @@ $$
 
 ## Example
 
-We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_naive.py) to solve the linear regression problem:
+We can then write [some code](https://github.com/Gregwar/optimization/blob/main/code/linear_regression_naive.py) to solve the linear regression problem:
 
 <center>
 <img src="imgs/linear_regression_naive.png" width="600" />
@@ -868,7 +867,7 @@ np.linalg.pinv(A) # pseudo-inverse
 
 ## Linear regression with pseudo-inverse
 
-We can then write [some code](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
+We can then write [some code](https://github.com/Gregwar/optimization/blob/main/code/linear_regression_pseudo_inverse.py) using `numpy.linalg.pinv` to solve the linear regression problem. Yielding the same result:
 
 <center>
 <img src="imgs/linear_regression_naive.png" width="600" />
@@ -887,7 +886,7 @@ On the next slide, you will find **data** and **models**.
 
 <div class="alert alert-primary">
 
-⚙️ Using the [linear regression example](https://github.com/Gregwar/supervised_learning/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/supervised_learning/blob/main/code/least_square_generate_data.py)!
+⚙️ Using the [linear regression example](https://github.com/Gregwar/optimization/blob/main/code/linear_regression_pseudo_inverse.py), you can write some code to find the [parameters used](https://github.com/Gregwar/optimization/blob/main/code/least_square_generate_data.py)!
 
 <hr/>
 
@@ -1003,7 +1002,7 @@ The model is linear in the parameters $(x_b, y_b, l_1, l_2)$.
 
 ## Practical case: identifying a RR robot
 
-Here are some [data](data/rr_data.csv) generated with this [script](https://github.com/Gregwar/supervised_learning/blob/main/code/rr_data.py).
+Here are some [data](data/rr_data.csv) generated with this [script](https://github.com/Gregwar/optimization/blob/main/code/rr_data.py).
 
 They contain noisy measurements of $(x_e, y_e)$ for different values of $(\alpha, \beta)$.
 
