@@ -701,11 +701,16 @@ $$
 
 First, let's write $L(w) = \sum_{i=1}^n (w_2 x_i + w_1 - y_i)^2$
 
+<span data-marpit-fragment>
+
 We can expand it to:
 
 $$
 L(w) = \sum_{i=1}^n (w_2^2 x_i^2 + w_1^2 + y_i^2 - 2 w_2 x_i y_i - 2 w_1 y_i + 2 w_1 w_2 x_i)
 $$
+
+</span>
+<span data-marpit-fragment>
 
 Then, we can compute the derivatives with respect to $w_1$ and $w_2$:
 
@@ -715,6 +720,8 @@ $$
 \frac{\partial L}{\partial w_2} &= 2 \sum_{i=1}^n x_i (w_2 x_i + w_1 - y_i)
 \end{align*}
 $$
+
+</span>
 
 ---
 
@@ -739,11 +746,15 @@ $$
 w_1 = \frac{\sum y_i - w_2 \sum x_i}{n} 
 $$
 
+<span data-marpit-fragment>
+
 Substitute in the second equation:
 
 $$
 w_2 \sum x_i^2 + \frac{1}{n} \sum x_i \sum y_i - w_2 \frac{1}{n} \sum x_i \sum x_i = \sum x_i y_i
 $$
+
+</span>
 
 ---
 
