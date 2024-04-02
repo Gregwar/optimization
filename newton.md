@@ -219,6 +219,31 @@ $J$ is called the **Jacobian** of $f$. We can also write $J = \frac{\partial f}{
 
 ## Jacobian
 
+Another way is to think of $f$ as a vector function:
+
+$$
+f(x) =
+\begin{bmatrix}
+g_1(x) \\
+\vdots \\
+g_m(x)
+\end{bmatrix}
+$$
+
+<span data-marpit-fragment>
+
+In that case, the Jacobian is the stack of the gradients of the $g_i$:
+
+$$
+J = \begin{bmatrix} \nabla g_1^T \\ \vdots \\ \nabla g_m^T \end{bmatrix}
+$$
+
+</span>
+
+---
+
+## Jacobian
+
 In the context of Newton's method, $f$ is now approximated with:
 
 $$
