@@ -159,53 +159,6 @@ Here are the intermediate expected steps, using $x_0 = 5$:
 <!-- header: "Multi dimensional case" -->
 # Multi dimensional case
 
----
-
-## Gradient
-
-Suppose we have a function $f: \mathbb{R}^n \to \mathbb{R}$.
-
-Let's take for example a function of two variables $x = \begin{bmatrix} x^{(1)} \\ x^{(2)} \end{bmatrix}$.
-
-In that case, the linear approximation becomes:
-
-$$
-f(x)
-\approx
-f(x_0)
-+
-\frac{df}{dx^{(1)}} \Delta x^{(1)}
-+
-\frac{df}{dy^{(2)}} \Delta x^{(2)}
-$$
-
----
-
-## Gradient
-
-In matrix form:
-
-$$
-f(x)
-\approx
-f(x_0)
-+
-\underbrace{
-\begin{bmatrix}
-\frac{df}{dx^{(1)}} &&
-\frac{df}{dy^{(2)}}
-\end{bmatrix}
-}_{\nabla f^T}
-\begin{bmatrix}
-\Delta x^{(1)} \\
-\Delta y^{(2)}
-\end{bmatrix}
-$$
-
-We call $\nabla f$ the **gradient** of $f$.
-
----
-
 ## Jacobian
 
 If we now have $f: \mathbb{R}^n \to \mathbb{R}^m$, the exact same approximation will

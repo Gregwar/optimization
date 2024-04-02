@@ -185,7 +185,321 @@ Problem remains:
 
 ---
 
+## Perceptron
+
+A **perceptron** is a function modelling a neuron, with the following architecture:
+
+<center>
+<img src="imgs/perceptron.svg" width="600" />
+</center>
+
+---
+
+## Perceptron
+
+Mathematically, it is:
+
+$$
+y = g(w_0 + \sum w_i x_i)
+$$
+
+Where:
+
+* $x_i$ are the inputs,
+* $w_i$ are the weights,
+* $w_0$ is the bias,
+* $g$ is the activation function.
+
+---
+
+## Activation functions
+
+The goal of the activation function is to introduce **non-linearity** in the model.
+
+---
+
+## Activation functions
+
+<div class="row">
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_relu.png" width="300" />
+</div>
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_sigmoid.png" width="300" />
+</div>
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_elu.png" width="300" />
+</div>
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_tanh.png" width="300" />
+</div>
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_silu.png" width="300" />
+</div>
+<div class="col-sm-4 p-1">
+<img src="imgs/activation_leakyrelu.png" width="300" />
+</div>
+</div>
+
+</div>
+
+---
+
 <!-- header: "Neural networks" -->
 # Neural networks
 
 ---
+
+## Neural networks
+
+In a neural network, multiple perceptrons are combined in layers:
+
+<center>
+<img src="imgs/simple_net.svg" width="600" />
+</center>
+
+Here, each $z$ is a perceptron.
+
+---
+
+## Neural network
+
+<center>
+<img src="imgs/net_fc.svg" width="600" />
+</center>
+
+We call this a **multi-layer perceptron** (MLP).
+The layers are **fully connected**.
+
+
+---
+
+<!-- header: "Learning" -->
+# Learning
+
+---
+
+## Loss function
+
+<div class="card m-1">
+<div class="card-header">
+Categorical cross-entropy
+</div>
+<div class="card-body">
+
+$$
+\mathcal{L}(w) = - \sum_{i=1}^n y_i \log(f(x_i, w))
+$$
+
+</div>
+</div>
+
+<div class="card m-1">
+<div class="card-header">
+Mean squared error
+</div>
+<div class="card-body">
+
+$$
+\mathcal{L}(w) = \frac{1}{n} \sum_{i=1}^n (y_i - f(x_i, w))^2
+$$
+
+</div>
+</div>
+
+---
+
+## Mini-batches
+
+In practice, we don't compute the loss over the whole dataset at each iteration. Instead, we use **mini-batches**.
+
+<span data-marpit-fragment>
+
+For example, we will sample $B = {i_1, i_2, \ldots, i_k}$ indices, and compute the loss over these samples:
+
+$$
+\mathcal{L}(w) \approx \frac{1}{| B |} \sum_{i \in B} \mathcal{L}(w, x_i, y_i)
+$$
+
+</span>
+
+<span data-marpit-fragment>
+
+We call an **epoch** a full pass over the dataset.
+
+</span>
+
+---
+
+## Training and validation
+
+When learning, we want to avoid **overfitting**.
+
+To achieve this, the typical strategy is to split the dataset into **training** and **validation** sets.
+
+<div class="alert alert-info" data-marpit-fragment>
+
+For example, 80% of the data is used for training, and 20% for validation.
+
+</div>
+
+---
+
+## Training and validation
+
+By monitoring the loss on the validation set, we can detect overfitting:
+
+<center>
+<img src="imgs/overfitting.png" width="500" />
+</center>
+
+---
+
+## Optimizer
+
+The gradient descent as presented before is not used in practice. Many extra features are added to improve convergence.
+
+<span data-marpit-fragment>
+
+The most common optimizer is the [Adam optimizer](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html#torch.optim.Adam).
+
+</span>
+<span data-marpit-fragment>
+
+It mostly adds **momentum** and **adaptive learning rates**.
+
+</span>
+
+---
+
+<!-- header: "PyTorch" -->
+# PyTorch
+
+---
+
+## PyTorch
+
+PyTorch is a popular library for deep learning. It provides:
+
+* Tensors (like Numpy arrays) with GPU support,
+* Automatic differentiation (computing gradients),
+* Neural network layers,
+* Optimizers,
+* ...
+
+---
+
+## Learning a simple function
+
+Let's first write a module for multi-layer perceptron (`mlp.py`):
+
+```python
+import torch as th
+
+# Defining a simple MLP
+class MLP(th.nn.Module):
+    def __init__(self, input_dimension: int, output_dimension: int):
+        super().__init__()
+
+        self.net = th.nn.Sequential(
+            th.nn.Linear(input_dimension, 256),
+            th.nn.ELU(),
+            th.nn.Linear(256, 256),
+            th.nn.ELU(),
+            th.nn.Linear(256, 256),
+            th.nn.ELU(),
+            th.nn.Linear(256, output_dimension),
+        )
+
+    def forward(self, x):
+        return self.net(x)
+```
+
+---
+
+## Learning a simple function
+
+We will then create some (nosiy) data:
+
+```python
+import numpy as np
+
+xs = np.linspace(0, 6, 1000)
+ys = np.sin(xs)*2.5 + 1.5 + np.random.randn(1000)*0.1
+```
+
+<center>
+<img src="imgs/noisy_sin.png" width="400" />
+</center>
+
+---
+
+## Learning a simple function
+
+Those data needs to be transformed into PyTorch tensors:
+
+```python
+import torch as th
+
+xs = th.tensor(xs, dtype=th.float).unsqueeze(1)
+ys = th.tensor(ys, dtype=th.float).unsqueeze(1)
+```
+
+---
+
+## Learning a simple function
+
+We can now create our MLP and the optimizer:
+
+```python
+from mlp import MLP
+
+# Creating the network and optimizer
+net = MLP(1, 1)
+optimizer = th.optim.Adam(net.parameters(), 1e-3)
+```
+
+---
+
+## Learning a simple function
+
+Finally, we can train our model:
+
+```python
+# Training the model
+for epoch in range(512):
+    # Compute the loss
+    loss = th.nn.functional.mse_loss(net(xs), ys)
+
+    # Computing the gradient and updating weights
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+    print(f"Epoch {epoch}, loss={loss.item()}")
+```
+
+---
+
+## Learning a simple function
+
+Putting it all together, and adding some plotting, we get the [example code](https://github.com/Gregwar/optimization/blob/main/code/learn_example.py):
+
+<center>
+<video src="imgs/learn_steps.mp4" width="600" controls />
+</center>
+
+---
+
+## Learning a simple function
+
+Plotting the loss over time:
+
+<center>
+<video src="imgs/learn_loss.mp4" width="600" controls />
+</center>
+
+---
+
+## Let's practice
+
+[PanTilt exercise](https://rhoban.github.io/reperes/tp_pantilt)

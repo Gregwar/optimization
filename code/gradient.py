@@ -57,7 +57,5 @@ for k in range(512):
 
     X0 = X1
 
-# Build the palette
-# ffmpeg -i gradient_step_%d.png -vf palettegen palette.png
-# Make the GIF
-# ffmpeg -i gradient_step_%d.png -i palette.png -lavfi paletteuse gradient_steps.gif
+
+# ffmpeg -i gradient_step_%d.png -pix_fmt yuv420p gradient_steps.mp4
