@@ -14,6 +14,7 @@ ys = th.tensor(ys, dtype=th.float).unsqueeze(1)
 # Creating the network and optimizer
 net = MLP(1, 1)
 optimizer = th.optim.Adam(net.parameters(), 1e-3)
+scheduler = th.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.9)
 losses = []
 
 for epoch in range(512):
@@ -37,4 +38,5 @@ for epoch in range(512):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
-    print(f"Epoch {epoch}, loss={loss.item()}")
+    scheduler.step(loss)
+    print(f"Epoch {epoch}, loss={loss.item()}, lr={scheduler.get_last_lr()}")

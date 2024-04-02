@@ -7,7 +7,7 @@
    viewBox="0 0 106.9123 64.935157"
    version="1.1"
    id="svg5"
-   sodipodi:docname="net_fc.svg"
+   sodipodi:docname="net_fc_raw.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -1632,127 +1632,127 @@
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833"
        cx="51.861874"
-       cy="34.714767"
+       cy="38.418938"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0"
        cx="85.470718"
-       cy="31.970499"
+       cy="35.674667"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0-8"
        cx="85.755455"
-       cy="51.028103"
+       cy="54.732273"
        r="6.6942949" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L)"
-       d="M 60.201131,34.922147 76.081453,33.394961"
+       d="M 60.201131,38.626316 76.081453,37.09913"
        id="path8977"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5)"
-       d="M 59.777439,51.320768 76.603677,35.949071"
+       d="M 59.777439,55.024937 76.603677,39.65324"
        id="path8977-2"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9)"
-       d="M 59.777439,51.320768 76.089982,51.140766"
+       d="M 59.777439,55.024937 76.089982,54.844935"
        id="path8977-2-2"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8)"
-       d="M 59.777439,51.320768 77.087284,68.098689"
+       d="M 59.777439,55.024937 77.087284,71.802858"
        id="path8977-2-2-8"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-2)"
-       d="M 59.716407,67.220357 77.855448,38.319926"
+       d="M 59.716407,70.924526 77.855448,42.024095"
        id="path8977-2-4"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-9)"
-       d="M 59.716407,67.220357 76.514304,54.657487"
+       d="M 59.716407,70.924526 76.514304,58.361656"
        id="path8977-2-2-4"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8-9)"
-       d="m 59.716407,67.220357 16.528468,4.039104"
+       d="M 59.716407,70.924526 76.244875,74.96363"
        id="path8977-2-2-8-9"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0)"
-       d="M 60.201134,34.922147 78.43284,65.667613"
+       d="M 60.201134,38.626316 78.43284,69.371782"
        id="path8977-0-6"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0-0)"
-       d="m 60.201134,34.922147 16.42116,13.134242"
+       d="m 60.201134,38.626316 16.42116,13.134242"
        id="path8977-0-6-0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-9)"
-       d="M 93.239061,31.646279 108.90909,31.448721"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-9)"
+       d="M 93.239061,35.350448 108.90909,35.15289"
        id="path8977-22"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-6)"
-       d="M 92.635117,51.717817 109.40128,34.453463"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-6)"
+       d="M 92.635117,55.421986 109.40128,38.157632"
        id="path8977-2-6"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-0)"
-       d="M 92.635117,51.717817 108.94766,51.537815"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-0)"
+       d="M 92.635117,55.421986 108.94766,55.241984"
        id="path8977-2-2-41"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8-94)"
-       d="M 92.635117,51.717817 109.94496,68.495738"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8-94)"
+       d="M 92.635117,55.421986 109.94496,72.199907"
        id="path8977-2-2-8-2"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-2-5)"
-       d="M 93.904627,71.627087 110.74317,37.004572"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-2-5)"
+       d="M 93.904627,75.331256 110.74317,40.708741"
        id="path8977-2-4-8"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-9-7)"
-       d="M 93.904627,71.627087 109.37198,55.054536"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-9-7)"
+       d="M 93.904627,75.331256 109.37198,58.758705"
        id="path8977-2-2-4-8"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8-9-3)"
-       d="m 93.904627,71.627087 15.197923,0.02942"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-5-9-8-9-3)"
+       d="m 93.904627,75.331256 15.197923,0.02942"
        id="path8977-2-2-8-9-9"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0-4)"
-       d="M 93.239061,31.646279 111.29052,66.064662"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0-4)"
+       d="M 93.239061,35.350448 111.29052,69.768831"
        id="path8977-0-6-2"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0-0-9)"
-       d="M 93.239061,31.646279 109.47997,48.453438"
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-1-0-0-9)"
+       d="M 93.239061,35.350448 109.47997,52.157607"
        id="path8977-0-6-0-8"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-14-0)"
-       d="m 126.20375,33.030405 10.81208,10.37399"
+       d="m 126.20375,36.734574 10.81208,10.37399"
        id="path8977-1-2"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-14-0-8)"
-       d="m 126.53506,51.327746 8.65154,-0.352105"
+       d="M 126.53506,55.031915 135.1866,54.67981"
        id="path8977-1-2-6"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.388363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-14-2)"
-       d="M 126.36334,67.320167 137.16713,56.267653"
+       d="M 126.36334,71.024336 137.16713,59.971822"
        id="path8977-1-0"
        sodipodi:nodetypes="cc" />
     <g
-       transform="matrix(0.69622762,0,0,0.69622762,82.305654,27.673524)"
+       transform="matrix(0.69622762,0,0,0.69622762,82.305654,31.377693)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -1843,7 +1843,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.69622762,0,0,0.69622762,82.305654,46.610952)"
+       transform="matrix(0.69622762,0,0,0.69622762,82.305654,50.315121)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -1945,28 +1945,28 @@
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0-8-2"
        cx="86.087898"
-       cy="71.825478"
+       cy="75.529648"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0-2"
        cx="118.5786"
-       cy="32.179321"
+       cy="35.883492"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0-8-4"
        cx="118.86337"
-       cy="51.236927"
+       cy="54.941097"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-5"
        cx="144.87184"
-       cy="49.941654"
+       cy="53.645824"
        r="6.6942949" />
     <g
-       transform="matrix(0.6962277,0,0,0.6962277,115.337,27.882297)"
+       transform="matrix(0.6962277,0,0,0.6962277,115.337,31.586466)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2066,7 +2066,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.6962277,0,0,0.6962277,115.337,46.819722)"
+       transform="matrix(0.6962277,0,0,0.6962277,115.337,50.523891)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2161,10 +2161,10 @@
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-0-8-4-9"
        cx="118.86335"
-       cy="72.403587"
+       cy="76.107758"
        r="6.6942949" />
     <g
-       transform="matrix(0.6962277,0,0,0.6962277,142.97313,48.020454)"
+       transform="matrix(0.6962277,0,0,0.6962277,142.97313,51.724623)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2216,7 +2216,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.696228,0,0,0.696228,48.5362,32.986)"
+       transform="matrix(0.696228,0,0,0.696228,48.5362,36.690169)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2299,16 +2299,16 @@
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-6"
        cx="51.861874"
-       cy="50.589771"
+       cy="54.293941"
        r="6.6942949" />
     <circle
        style="fill:#82b7ff;fill-opacity:0.123261;stroke:#000000;stroke-width:0.513739;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path8833-6-3"
        cx="51.861874"
-       cy="66.464775"
+       cy="70.168945"
        r="6.6942949" />
     <g
-       transform="matrix(0.696228,0,0,0.696228,48.46,48.8608)"
+       transform="matrix(0.696228,0,0,0.696228,48.46,52.564969)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2388,7 +2388,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.696228,0,0,0.696228,48.4382,64.6869)"
+       transform="matrix(0.696228,0,0,0.696228,48.4382,68.391069)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2468,7 +2468,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.696228,0,0,0.696228,82.638,67.3593)"
+       transform="matrix(0.696228,0,0,0.696228,82.638,71.063469)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2568,7 +2568,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.696228,0,0,0.696228,115.33668,67.9374)"
+       transform="matrix(0.696228,0,0,0.696228,115.33668,71.641569)"
        ns6:version="1.8.2"
        ns6:texconverter="pdflatex"
        ns6:pdfconverter="inkscape"
@@ -2667,71 +2667,5 @@
         </g>
       </g>
     </g>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.765, 0.765;stroke-dashoffset:0;stroke-opacity:0.277001"
-       d="M 68.689209,23.772652 V 85.225448"
-       id="path55473" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.765, 0.765;stroke-dashoffset:0;stroke-opacity:0.277001"
-       d="M 102.02672,23.772652 V 85.225448"
-       id="path55473-0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.765, 0.765;stroke-dashoffset:0;stroke-opacity:0.277001"
-       d="M 131.13092,23.772653 V 85.225448"
-       id="path55473-0-8" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.86792px;line-height:1.25;font-family:sans-serif;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0966979"
-       x="51.180393"
-       y="85.174637"
-       id="text27503-1-2-0"><tspan
-         sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="51.180393"
-         y="85.174637"
-         id="tspan50440-9">input</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.86792px;line-height:1.25;font-family:sans-serif;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0966979"
-       x="85.60157"
-       y="83.764458"
-       id="text27503-1-2"><tspan
-         sodipodi:role="line"
-         id="tspan27501-3-5"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="85.60157"
-         y="83.764458">hidden layer</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="85.60157"
-         y="88.599358"
-         id="tspan50440">3 neurons</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.86792px;line-height:1.25;font-family:sans-serif;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0966979"
-       x="117.1645"
-       y="83.818138"
-       id="text27503-1-2-6"><tspan
-         sodipodi:role="line"
-         id="tspan27501-3-5-2"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="117.1645"
-         y="83.818138">hidden layer</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="117.1645"
-         y="88.653038"
-         id="tspan50440-5">3 neurons</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.86792px;line-height:1.25;font-family:sans-serif;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0966979"
-       x="144.69057"
-       y="85.855217"
-       id="text27503-1-2-6-8"><tspan
-         sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;fill:#ff6600;stroke-width:0.0966979"
-         x="144.69057"
-         y="85.855217"
-         id="tspan50440-5-2">output</tspan></text>
   </g>
 </svg>

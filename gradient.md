@@ -60,6 +60,12 @@ f(x_0)
 \frac{df}{dx_2} \Delta x_2
 $$
 
+<div class="alert alert-info">
+
+**Note**: the derivatives above are taken at $x_0$.
+
+</div>
+
 </span>
 
 ---
@@ -149,7 +155,7 @@ The algorithm is then:
    $x_{k+1} = x_k - \alpha \nabla f(x_k)$.
 4. Repeat until convergence.
 
-<div class="alert alert-primary" data-marpit-fragment>
+<div class="alert alert-info" data-marpit-fragment>
 
 $\alpha$ is called the **learning rate**.
 
@@ -176,12 +182,17 @@ We can now find the $w$ that minimizes $f(w)$, even when $f$ is not linear.
 <span data-marpit-fragment>
 
 Problem remains:
-- What model $f(x, w)$ to use ?
+- What model $f(x, w)$ to use ? 
 - How to compute the gradient $\nabla f$ ?
 - How to choose/adjust the learning rate $\alpha$ ?
 - How to tackle over/underfitting ?
 
 </span>
+
+---
+
+<!-- header: "Perceptron" -->
+# Perceptron
 
 ---
 
@@ -197,7 +208,7 @@ A **perceptron** is a function modelling a neuron, with the following architectu
 
 ## Perceptron
 
-Mathematically, it is:
+The output of the perceptron is:
 
 $$
 y = g(w_0 + \sum w_i x_i)
@@ -255,7 +266,7 @@ The goal of the activation function is to introduce **non-linearity** in the mod
 In a neural network, multiple perceptrons are combined in layers:
 
 <center>
-<img src="imgs/simple_net.svg" width="600" />
+<img src="imgs/net_fc.svg" width="600" />
 </center>
 
 Here, each $z$ is a perceptron.
@@ -264,12 +275,44 @@ Here, each $z$ is a perceptron.
 
 ## Neural network
 
-<center>
-<img src="imgs/net_fc.svg" width="600" />
-</center>
-
 We call this a **multi-layer perceptron** (MLP).
 The layers are **fully connected**.
+
+<center>
+<img src="imgs/net_fc_raw.svg" width="600" />
+</center>
+
+---
+
+## Weights
+
+<center>
+<img src="imgs/net_fc_count1.svg" width="600" />
+</center>
+
+---
+
+## Weights
+
+<center>
+<img src="imgs/net_fc_count2.svg" width="600" />
+</center>
+
+---
+
+## Weights
+
+<center>
+<img src="imgs/net_fc_count3.svg" width="600" />
+</center>
+
+---
+
+## Weights
+
+<center>
+<img src="imgs/net_fc_count_total.svg" width="600" />
+</center>
 
 
 ---

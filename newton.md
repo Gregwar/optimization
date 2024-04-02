@@ -25,9 +25,17 @@ style: :root { font-size: 1.5em; }
 
 ## Newton's method
 
-Previously, we see how to solve linear systems of equations (exactly, or approximately).
+We already saw how to solve linear systems of equations, solving them approximately with least squares, and how to use gradient descent to solve optimization problems.
 
 **Problem**: How to solve $f(x) = 0$, for any function $f$?
+
+---
+
+## Newton's method
+
+We could create an error function $e(x) = f(x)^2$, and use gradient descent to minimize it. 
+
+We will see another method, called **Newton's method**.
 
 ---
 
@@ -159,14 +167,29 @@ Here are the intermediate expected steps, using $x_0 = 5$:
 <!-- header: "Multi dimensional case" -->
 # Multi dimensional case
 
+---
+
+## Gradient
+
+Remember the gradient of a function $f: \mathbb{R}^n \to \mathbb{R}$:
+
+$$
+\nabla f = \begin{bmatrix} \frac{\partial f}{\partial x_1} \\ \vdots \\ \frac{\partial f}{\partial x_n} \end{bmatrix}
+$$
+
+---
+
 ## Jacobian
 
-If we now have $f: \mathbb{R}^n \to \mathbb{R}^m$, the exact same approximation will
-apply for every rows of $f$.
+If we now have $f: \mathbb{R}^n \to \mathbb{R}^m$, what is the derivative of $f$?
 
 <span data-marpit-fragment>
 
-For example, for $f: \mathbb{R}^2 \to \mathbb{R}^2$, we have:
+For example, for $f: \mathbb{R}^2 \to \mathbb{R}^2$.
+Say $(y_1, y_2) = f(x_1, x_2)$.
+
+</span>
+<span data-marpit-fragment>
 
 $$
 f(x)
@@ -175,13 +198,13 @@ f(x_0)
 +
 \underbrace{
 \begin{bmatrix}
-\frac{df^{(1)}}{dx^{(1)}} && \frac{df^{(1)}}{dy^{(2)}} \\
-\frac{df^{(2)}}{dx^{(1)}} && \frac{df^{(2)}}{dy^{(2)}}
+\frac{\partial y_1}{\partial x_1} && \frac{\partial y_1}{\partial x_2} \\
+\frac{\partial y_2}{\partial x_1} && \frac{\partial y_2}{\partial x_2}
 \end{bmatrix}
 }_J
 \begin{bmatrix}
-\Delta x^{(1)} \\
-\Delta y^{(2)}
+\Delta x_1 \\
+\Delta x_2
 \end{bmatrix}
 $$
 
