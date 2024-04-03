@@ -352,6 +352,84 @@ $$
 
 ---
 
+## Loss function
+
+<center>
+<img src="imgs/net_fc_loss.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+Suppose we have: $y = h(g(f(x, w_f), w_g), w_h)$
+
+Where $f$, $g$ and $h$ are the layers of the network.
+
+<div class="alert alert-info" data-marpit-fragment>
+
+How to compute $\frac{\partial \mathcal{L}}{\partial w}$ ?
+
+</div>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_1.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_2.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_3.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_4.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_5.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_6.svg" width="600" />
+</center>
+
+---
+
+## Backpropagation
+
+<center>
+<img src="imgs/backprop_7.svg" width="600" />
+</center>
+
+---
+
 ## Mini-batches
 
 In practice, we don't compute the loss over the whole dataset at each iteration. Instead, we use **mini-batches**.
