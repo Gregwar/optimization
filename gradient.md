@@ -82,12 +82,12 @@ f(x_0)
 \underbrace{
 \begin{bmatrix}
 \frac{df}{dx_1} &&
-\frac{df}{dy_2}
+\frac{df}{dx_2}
 \end{bmatrix}
 }_{\nabla f^T}
 \begin{bmatrix}
 \Delta x_1 \\
-\Delta y_2
+\Delta x_2
 \end{bmatrix}
 $$
 
