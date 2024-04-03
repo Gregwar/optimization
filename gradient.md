@@ -29,7 +29,7 @@ Previously, we see how to solve linear systems of equations (exactly, or approxi
 
 <span data-marpit-fragment>
 
-**Problem**: How to find $w$ when $f(w)$ is not linear?
+**Problem**: How to find $w$ when $f(x, w)$ is not linear in $w$ ?
 
 </span>
 
