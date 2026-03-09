@@ -716,7 +716,7 @@ Then, we can compute the derivatives with respect to $w_1$ and $w_2$:
 $$
 \begin{align*}
 \frac{\partial L}{\partial w_1} &= 2 \sum_{i=1}^n (w_2 x_i + w_1 - y_i) \\
-\frac{\partial L}{\partial w_2} &= 2 \sum_{i=1}^n x_i (w_2 x_i + w_1 - y_i)
+\frac{\partial L}{\partial w_2} &= 2 \sum_{i=1}^n (w_2 x_i^2 + w_1 x_i - x_i y_i)
 \end{align*}
 $$
 

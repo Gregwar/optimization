@@ -55,14 +55,14 @@ f(x)
 \approx
 f(x_0)
 +
-\frac{df}{dx_1} \Delta x_1
+\frac{\partial f}{\partial x_1} \Delta x_1
 +
-\frac{df}{dx_2} \Delta x_2
+\frac{\partial f}{\partial x_2} \Delta x_2
 $$
 
 <div class="alert alert-info">
 
-**Note**: the derivatives above are taken at $x_0$.
+**Note**: the notation $\frac{\partial f}{\partial x_1}$ is exactly like a derivative, but *partial* (taken only with respect to $x_1$)
 
 </div>
 
@@ -81,8 +81,8 @@ f(x_0)
 +
 \underbrace{
 \begin{bmatrix}
-\frac{df}{dx_1} &&
-\frac{df}{dx_2}
+\frac{\partial f}{\partial x_1} &&
+\frac{\partial f}{\partial x_2}
 \end{bmatrix}
 }_{\nabla f^T}
 \begin{bmatrix}
