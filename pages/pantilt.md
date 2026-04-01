@@ -6,7 +6,7 @@ output:
 
 <img src="imgs/pantilt.png" width="200" class="float-end" />
 
-Dans ce TP, nous allons apprendre le **modèle cinématique** inverse d'un *pan-tilt*.
+Dans ce TP, nous allons apprendre le **modèle géométrique** inverse d'un *pan-tilt*.
 
 ## 0. Prise en main
 
