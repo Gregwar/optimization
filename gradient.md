@@ -111,8 +111,8 @@ $$
 \nabla f
 =
 \begin{bmatrix}
-\frac{df}{dx_1} \\
-\frac{df}{dx_2}
+\frac{\partial f}{\partial x_1} \\
+\frac{\partial f}{\partial x_2}
 \end{bmatrix}
 =
 \begin{bmatrix} -\sin(x_1) + 2 x_2 \\ 2 x_1 - 2 x_2 \end{bmatrix}
