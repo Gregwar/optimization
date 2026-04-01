@@ -643,7 +643,7 @@ We will call this error $\mathcal{L}(w)$.
 The most common error is the **least squares** error:
 
 $$
-\mathcal{L}(w) = \sum_{i=1}^n |f(x_i, w) - y_i)|
+\mathcal{L}(w) = \sum_{i=1}^n (f(x_i, w) - y_i)^2
 $$
 
 </span>
