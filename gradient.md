@@ -623,4 +623,5 @@ Plotting the loss over time:
 
 ## Let's practice
 
-[PanTilt exercise](https://rhoban.github.io/reperes/tp_pantilt)
+[Learning to recognize digits](https://gregwar.com/prog_multimedia/deep.html)
+
