@@ -1,0 +1,41 @@
+body {
+    font-size: 120%;
+    background:#eee;
+}
+
+.container {
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.sourceCode {
+    padding:5px;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.main {
+    max-width:1024px;
+}
+
+li {
+    margin-left:10px;
+}
+
+h1 {
+    text-align:center;
+}
+
+.step.done {
+    opacity: 0.5;
+}
+
+.step-checkbox {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -40px;
+}
