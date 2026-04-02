@@ -121,6 +121,8 @@ Quelle fonction de perte est utilisée ?
 
 </div>
 
+</div>
+
 ## 3.2 Entraînement
 
 En vous inspirant de `learn_example`, créez un fichier `learn.py` dans lequel:
