@@ -100,6 +100,7 @@ Dans cette partie, l'objectif est d'apprendre au laser à viser un point cible. 
 <div class="step">
 
 Exécutez `learn_example.py`, lisez son code ainsi que celui de `mlp.py` et répondez aux quesitons suivantes.
+</div>
 
 <div class="step">
 Combien de couches cachées y'a-t-il dans ce réseau ?
