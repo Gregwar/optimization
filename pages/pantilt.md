@@ -53,6 +53,12 @@ Le modèle du pan-tilt est le suivant:
 <img src="imgs/pan_tilt.png" width="150" />
 </center>
 
+<center>
+
+$$l_1 = 195 \space mm, l_2 = 82.5 \space mm$$
+
+</center>
+
 <div class="step">
 
 Dans `model.py`, implémentez la méthode `direct`, qui prend en entrée les deux angles du robot, et produit la matrice de transformation ${}^w T_e$ 4x4 allant de l’effecteur au monde.
